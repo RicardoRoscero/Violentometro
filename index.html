@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Violentometro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body id="Cuerpo">
+  <div class="fondo">
+    <h1 id="titulo">Violentómetro</h1>
+    <p id="intro">
+      IPN (S.F) Define que este material gráfico es utlizado para visualizar las diferentes manifestaciones
+      de violencia que se encuentran ocultas en la vida cotidiana y que muchas
+      veces confundimos o desconocemos. Selecciona una casilla si has sufrido
+      o causado alguna de las siguientes manifestaciones de violencia y cuando
+      termines presiona el botón al final de la página a la derecha para conocer tus resultados
+    </p>
+
+    <table id="tabla">
+      <tr>
+        <td>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Asesinar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              ASESINAR (Homicidio/Feminicidio)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Mutilar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Mutilar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Violar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Violar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="AbusoSexual" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Abuso sexual
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="ForzarRelacionSex"
+              onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Forzar a una relación sexual
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="AmenMuerte" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Amenazar de muerte
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="ContenidoIntimo"
+              onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Difundir contenido intimo sin <br />
+              consentimiento por medios digitales
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="AmenazarConArmas"
+              onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Amenazar con objetos o armas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Sextorsion" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Sextorsión
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Encerrar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Encerrar, aislar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Patear" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Patear
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Cachetear" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Cachetear
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Empujar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Empujar, jalonear
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Pellizcar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Pellizcar, arañar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="GolpearJugando" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Golpear "jugando"
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="CaricasAgresivas"
+              onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Caricias agresivas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Manosear" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Manosear
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Destruir" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Destruir artículos personales
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Prohibir" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Controlar, prohibir (amistades, familiares, <br />
+              dinero, lugares,apariencia, actividades, <br />
+              celular, mails, redes sociales)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Intimidar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Intimidar, amenazar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Humillar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Humillar en público
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Ofender" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Ridiculizar, ofender
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Descalificar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Descalificar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Culpa" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Culpabilizar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Stalkear" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Acechar / Stalkear redes sociales
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Celar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Celar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Ignorar" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Ignorar, ley del hielo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Mentir" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Mentir, engañar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Chantaje" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Chantajear
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Bromas" onclick="this.disabled=true" />
+            <label class="form-check-label" for="flexCheckChecked">
+              Bromas hirientes
+            </label>
+          </div>
+        </td>
+        <td>
+          <img src="imgs/temp.png" alt="No se pudo cargar la imagen" />
+        </td>
+      </tr>
+    </table>
+    <div id="botonRes">
+      <button type="button" class="btn btn-dark" onclick="MostrarResultados()">
+        Conoce tu resultado
+      </button>
+    </div>
+    <footer>
+      <h5>Referencias</h5>
+      <p>Martínez, Á. (2021, 6 marzo). ¿QUÉ ES EL VIOLENTÓMETRO Y PARA QUÉ SIRVE? Instituto Sivana. Recuperado 8 de
+        marzo de 2022, de<br>
+        <a href="https://institutosivana.org/que-es-el-violentometro-y-para-que-sirve/amp/" target="blank">Link</a>
+      </p>
+      <p>Violentómetro. (s. f.). Instituto Politécnico Nacional. Recuperado 8 de marzo de 2022, de<br>
+        <a href="https://www.ipn.mx/genero/materialesdeapoyo/violentometro.html" target="blank">Link</a>
+      </p>
+      <p>VEducagénero (2018, 1 marzo). Violentometro. Recuperado 8 de marzo de 2022, de<br>
+        <a href="http://educagenero.org/violentometro" target="blank">Link</a>
+      </p>
+    </footer>
+  </div>
+  <script src="codigo.js"></script>
+</body>
+
+</html>

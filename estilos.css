@@ -1,0 +1,40 @@
+body {
+  background: white;
+  text-align: center;
+}
+
+.fondo {
+  background: linear-gradient(#d20000, #ff0000, orange, yellow, #01ea1e, green);
+  color: black;
+  padding: 6 rem 1 rem;
+  margin: 4 rem;
+  font-size: 20px;
+}
+#titulo {
+  color: white;
+  font-size: 50px;
+  font-size: italic;
+  text-align: center;
+}
+#intro {
+  color: white;
+  font-size: 14px;
+  font-size: italic;
+  text-align: center;
+}
+#botonRes{
+    text-align: right;
+}
+#Cuerpo{
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  color: white;
+  font-size:small;
+}
+a:link {
+  color:deepskyblue;
+}
